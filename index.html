@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Girlfriend's Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="card" id="mainCard">
+            <div class="card-inner">
+                <div class="heart-icon">❤️</div>
+                <h1 class="title">Happy Girlfriend's Day</h1>
+                <div class="divider"></div>
+                <p class="subtitle" id="typewriter"></p>
+                <button class="interactive-btn" id="surpriseBtn">Click for a Surprise</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="fireworksCanvas"></canvas>
+
+    <div id="slideshow-modal" class="modal">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/couple2_rotated.png">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/couple3_rotated.png">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/couple_rotated.png">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/couple4.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/couple5.jpg">
+            </div>
+        </div>
+        <div class="dots-container" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <button class="close-btn" onclick="closeSlideshow()">Close</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
